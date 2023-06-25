@@ -1,0 +1,27 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+int main() {
+ 
+    char a[50];
+    char temp;
+    cout<<"Enter the String"<<endl;
+    cin>>a;
+    int len=strlen(a);
+    int s=0;
+    int e=len-1;
+    while(s<e)
+    {
+        temp=s[a];
+        s[a]=e[a];
+        e[a]=temp;
+        s++;
+        e--;
+    }
+    printf("reversed str is:%s",a);
+    return 0;
+    
+
+
+}
